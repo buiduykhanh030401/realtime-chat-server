@@ -70,6 +70,21 @@ module.exports.setAvatar = async (req, res, next) => {
     }
 
 }
+module.exports.getPost = async (req, res, next) => {
+
+    try {
+
+
+        return res.json({
+            isSet: "BuiDuyKhanh",
+            image: "Jinx"
+        })
+    } catch (error) {
+        next(error);
+        console.log(error);
+    }
+
+}
 module.exports.getAllUsers = async (req, res, next) => {
 
     try {
